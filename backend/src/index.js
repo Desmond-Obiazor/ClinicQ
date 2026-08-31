@@ -10,7 +10,7 @@ process.on("unhandledRejection", (err) => {
   console.error("Unhandled rejection:", err);
 });
 const app = express();
-app.use(cors({ origin: "https://clinic-q-murex.vercel.app/" }));
+app.use(cors({ origin: "https://clinic-q-murex.vercel.app" }));
 app.use(express.json());
 
 app.get("/health", (req, res) => res.json({ ok: true }));
